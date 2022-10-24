@@ -14,7 +14,7 @@ const postData = async (data) => {
 }
 
 form.addEventListener("submit", (event) => {
-    // event.preventDefault();
+    event.preventDefault();
     console.log(emailInput.value)
     const data = { email: emailInput.value }
     postData(data)
